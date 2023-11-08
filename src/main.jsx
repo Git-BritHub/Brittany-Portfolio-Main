@@ -16,7 +16,7 @@ import ContactMe from './views/ContactMe';
 import Portfolio from './views/Portfolio';
 import Resume from './views/Resume';
 
-// Definte routes
+// Defined routes
 const router = createBrowserRouter([
   {
     path: '/',
