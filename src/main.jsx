@@ -1,10 +1,48 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
-import App from './App.jsx'
+
+// Import React router
+import { createBrowserRouter, RouterProvider } from 'react-router-dom';
+
 import './index.css'
+import 'bootstrap/dist/css/bootstrap.min.css'
+import 'bootstrap/dist/js/bootstrap.min.js'
+
+// Import views/pages for router
+import App from './App';
+import Error from './views/Error';
+import AboutMe from './views/AboutMe';
+import ContactMe from './views/ContactMe';
+import Portfolio from './views/Portfolio';
+import Resume from './views/Resume';
+
+// Definte routes
+const router = createBrowserRouter([
+  {
+    path: '/',
+    element: <App />,
+    errorElement: <Error />,
+    children: [
+      {
+        index: true,
+        element: <Portfolio />
+      },
+      {
+        path: 'aboutme',
+        element: <AboutMe />
+      },
+      {
+        path: 'contactme',
+        element: <ContactMe />
+      },
+      {
+        path: 'resume',
+        element: <Resume />
+      },
+    ],
+  },
+]);
 
 ReactDOM.createRoot(document.getElementById('root')).render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
+  <RouterProvider router={router} />
 )
