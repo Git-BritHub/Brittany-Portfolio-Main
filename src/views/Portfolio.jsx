@@ -3,7 +3,7 @@ import Project from '../components/Projects/Project';
 
 const projects = [
     {
-        // TODO: Add Screenshots and URLs for websites
+        // TODO: Add four more Project titles and all Screenshots and URLs for project websites
         title: 'masterBuilder',
         screenshot: '',
         url: '',
@@ -18,7 +18,21 @@ const projects = [
         screenshot: '',
         url: '',
     },
-    // Add more projects
+    {
+        title: 'Project 4',
+        screenshot: '',
+        url: '',
+    },
+    {
+        title: 'Project 5',
+        screenshot: '',
+        url: '',
+    },
+    {
+        title: 'Project 6',
+        screenshot: '',
+        url: '',
+    },
 ];
 
 function Portfolio() {
