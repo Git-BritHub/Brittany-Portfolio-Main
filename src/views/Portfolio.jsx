@@ -3,6 +3,7 @@ import Project from '../components/Projects/Project';
 
 const projects = [
     {
+        // TODO: Add Screenshots and URLs for websites
         title: 'masterBuilder',
         screenshot: '',
         url: '',
