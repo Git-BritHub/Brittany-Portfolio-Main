@@ -14,7 +14,7 @@ import AboutMe from './views/AboutMe';
 import ContactMe from './views/ContactMe';
 import Portfolio from './views/Portfolio';
 import Resume from './views/Resume';
-
+// import {Error, AboutMe, ContactMe, Portfolio, Resume} from './views';
 // Defined routes
 const router = createBrowserRouter([
   {
