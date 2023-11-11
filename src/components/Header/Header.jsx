@@ -8,7 +8,7 @@ export default function Header() {
 
     return (
         <nav className='navbar navbar-expand-lg'>
-            {/* <style>
+            <style>
                 {`
                 body,html {
                     margin: 0;
@@ -66,7 +66,7 @@ export default function Header() {
                   }
                 }
                 `}
-            </style> */}
+            </style>
             <div className='container-fluid'>
                 <Link key={1} className={currentView === 'AboutMe' ? 'navbar-brand active' : 'navbar-brand'} onClick={() => handleViewChange('AboutMe')} to='/'>Brittany Brimley</Link>
                 <button
