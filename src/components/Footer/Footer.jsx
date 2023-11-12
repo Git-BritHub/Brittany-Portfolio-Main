@@ -1,6 +1,7 @@
 import React from 'react';
 import { FaLinkedin, FaGithub, FaStackOverflow } from 'react-icons/fa6';
-import { useState } from "react"
+import { useState } from "react";
+import './style.css';
 
 export default function Footer() {
 
@@ -13,33 +14,20 @@ export default function Footer() {
             backgroundColor: 'violet',
             border: '2px solid yellow',
             color: 'aqua',
-            // position: 'relative',
-            // textTransform: 'none',
-            // transform: 'none',
-            // content: 'none',
-            // textDecoration: 'none',
-            // transition: 'none',
-            // bottom: 'none',
+            font: 'bold',
         },
         after: {
             backgroundColor: 'black',
             border: '2px solid aqua',
             color: 'aqua',
-            // position: 'relative',
-            // textTransform: 'none',
-            // transform: 'none',
-            // content: 'none',
-            // textDecoration: 'none',
-            // transition: 'none',
-            // bottom: 'none',
+            font: 'bold',
         },
-
     };
 
     return (
-        <footer className='text-center text-white'>
+        <footer className='text-center text-white bg-black'>
             <div className='container p-3 pb-0'>
-                <section className='mb-3'>
+                <section className='mb-4'>
                     <a className='btn btn-outline-light btn floating m-1 rounded-circle'
                         href='https://www.linkedin.com/in/brittany-brimley-390a81293/' role='button'
                         style={{...linkIcon ? stylesheet.hover : stylesheet.after

@@ -1,10 +1,10 @@
 body {
     margin: 0;
     font: bold 14px/1.4 'Open Sans', arial, sans-serif;
-    background: #000;
+    background: black;
 }
 
-ul { 
+.navbar.ul { 
   margin: 150px auto 0; 
   padding: 0; 
   list-style: none; 
@@ -13,13 +13,13 @@ ul {
   text-align: center;
 }
 
-li { 
+.navbar li { 
   display: table-cell; 
   position: relative; 
   padding: 15px 0;
 }
 
-.header a {
+.navbar a {
   color: #fff;
   text-transform: uppercase;
   text-decoration: none;

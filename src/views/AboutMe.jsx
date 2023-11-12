@@ -5,7 +5,7 @@ const styles = {
 function AboutMe() {
     return (
         <div className=''>
-            <h1>About Me!</h1>
+            <h2>ABOUT ME</h2>
         </div>
         // TODO: Add styling and formatting with react-bootstrap
         // TODO: Add profile pic
