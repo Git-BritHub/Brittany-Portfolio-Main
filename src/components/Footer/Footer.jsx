@@ -10,16 +10,31 @@ export default function Footer() {
 
     const stylesheet = {
         hover: {
-            backgroundColor: "purple",
-            border: "2px solid aqua",
-            color: "aqua"
+            backgroundColor: 'violet',
+            border: '2px solid yellow',
+            color: 'aqua',
+            // position: 'relative',
+            // textTransform: 'none',
+            // transform: 'none',
+            // content: 'none',
+            // textDecoration: 'none',
+            // transition: 'none',
+            // bottom: 'none',
         },
         after: {
-            backgroundColor: "black",
-            border: "2px solid white",
-            color: "aqua"
-        }
-    }
+            backgroundColor: 'black',
+            border: '2px solid aqua',
+            color: 'aqua',
+            // position: 'relative',
+            // textTransform: 'none',
+            // transform: 'none',
+            // content: 'none',
+            // textDecoration: 'none',
+            // transition: 'none',
+            // bottom: 'none',
+        },
+
+    };
 
     return (
         <footer className='text-center text-white'>
@@ -27,7 +42,8 @@ export default function Footer() {
                 <section className='mb-3'>
                     <a className='btn btn-outline-light btn floating m-1 rounded-circle'
                         href='https://www.linkedin.com/in/brittany-brimley-390a81293/' role='button'
-                        style={linkIcon ? stylesheet.hover : stylesheet.after} onMouseEnter={() => {
+                        style={{...linkIcon ? stylesheet.hover : stylesheet.after
+                        }} onMouseEnter={() => {
                             pickLinkIcon(true)
                         }} onMouseLeave={() => {
                             pickLinkIcon(false)
@@ -35,7 +51,8 @@ export default function Footer() {
                     </a>
                     <a className='btn btn-outline-light btn-floating m-1 rounded-circle'
                         href='https://github.com/Git-BritHub' role='button'
-                        style={gitIcon ? stylesheet.hover : stylesheet.after} onMouseEnter={() => {
+                        style={{...gitIcon ? stylesheet.hover : stylesheet.after
+                        }} onMouseEnter={() => {
                             pickGitIcon(true)
                         }} onMouseLeave={() => {
                             pickGitIcon(false)
@@ -44,7 +61,8 @@ export default function Footer() {
                     {/* Create and Add StackOverflow user url */}
                     <a className='btn btn-outline-light btn-floating m-1 rounded-circle'
                         href='https://stackoverflow.com/'
-                        style={stackIcon ? stylesheet.hover : stylesheet.after} onMouseEnter={() => {
+                        style={{...stackIcon ? stylesheet.hover : stylesheet.after
+                        }} onMouseEnter={() => {
                             pickStackIcon(true)
                         }} onMouseLeave={() => {
                             pickStackIcon(false)
