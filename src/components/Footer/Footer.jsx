@@ -29,7 +29,7 @@ export default function Footer() {
             <div className='container p-3 pb-0'>
                 <section className='mb-4'>
                     <a className='btn btn-outline-light btn floating m-1 rounded-circle'
-                        href='https://www.linkedin.com/in/brittany-brimley-390a81293/' role='button'
+                        href='https://www.linkedin.com/in/brittany-brimley-390a81293/' target='_blank 'role='button'
                         style={{...linkIcon ? stylesheet.hover : stylesheet.after
                         }} onMouseEnter={() => {
                             pickLinkIcon(true)
@@ -38,7 +38,7 @@ export default function Footer() {
                         }}><FaLinkedin />
                     </a>
                     <a className='btn btn-outline-light btn-floating m-1 rounded-circle'
-                        href='https://github.com/Git-BritHub' role='button'
+                        href='https://github.com/Git-BritHub' target='_blank' role='button'
                         style={{...gitIcon ? stylesheet.hover : stylesheet.after
                         }} onMouseEnter={() => {
                             pickGitIcon(true)
@@ -48,7 +48,7 @@ export default function Footer() {
                     </a>
                     {/* Create and Add StackOverflow user url */}
                     <a className='btn btn-outline-light btn-floating m-1 rounded-circle'
-                        href='https://stackoverflow.com/'
+                        href='https://stackoverflow.com/' target='_blank' role='button'
                         style={{...stackIcon ? stylesheet.hover : stylesheet.after
                         }} onMouseEnter={() => {
                             pickStackIcon(true)
