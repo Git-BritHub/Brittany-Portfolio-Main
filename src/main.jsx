@@ -9,12 +9,12 @@ import 'bootstrap/dist/js/bootstrap.min.js';
 
 // Import views/pages for router
 import App from './App';
-import Error from './views/Error';
-import AboutMe from './views/AboutMe';
-import ContactMe from './views/ContactMe';
-import Portfolio from './views/Portfolio';
-import Resume from './views/Resume';
-// import {Error, AboutMe, ContactMe, Portfolio, Resume} from './views';
+import Error from './views/Error/Error';
+import AboutMe from './views/AboutMe/AboutMe';
+import ContactMe from './views/ContactMe/ContactMe';
+import Portfolio from './views/Portfolio/Portfolio';
+import Resume from './views/Resume/Resume';
+
 // Defined routes
 const router = createBrowserRouter([
   {

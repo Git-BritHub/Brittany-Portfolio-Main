@@ -1,5 +1,8 @@
-import React from 'react';
-import Project from '../components/Projects/Project';
+// import { Swiper, SwiperSlide } from 'swiper/react';
+// import { EffectCoverflow } from 'swiper';
+import 'swiper/css';
+import 'swiper/css/effect-coverflow';
+import Project from '../../components/Projects/Project';
 
 const projects = [
     {
