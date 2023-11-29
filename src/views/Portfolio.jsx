@@ -6,32 +6,32 @@ const projects = [
         // TODO: Add four more Project titles and all Screenshots and URLs for project websites
         title: 'masterBuilder',
         screenshot: '',
-        url: '',
+        url: 'https://master-builder-production-40c9.up.railway.app/',
     },
     {
         title: 'Concert Groupie',
         screenshot: '',
-        url: '',
+        url: 'https://github.com/Git-BritHub/concert-groupie',
     },
     {
-        title: 'Project 3',
+        title: 'Novel Pursuit',
         screenshot: '',
-        url: '',
+        url: 'https://novel-pursuit-production.up.railway.app/',
     },
     {
-        title: 'Project 4',
+        title: 'Scribe Master 3000',
         screenshot: '',
-        url: '',
+        url: 'https://scribe-master-3000-production.up.railway.app/',
     },
     {
-        title: 'Project 5',
+        title: 'Micromanager Deluxe',
         screenshot: '',
-        url: '',
+        url: 'https://github.com/Git-BritHub/Micromanager-Deluxe.git',
     },
     {
-        title: 'Project 6',
+        title: 'Destination Weather Dashboard',
         screenshot: '',
-        url: '',
+        url: 'https://git-brithub.github.io/Destination-Weather-Dashboard/',
     },
 ];
 
