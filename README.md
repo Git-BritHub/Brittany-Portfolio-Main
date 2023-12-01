@@ -23,6 +23,8 @@ My main portfolio website to showcase my skills as a Full Stack Web Developer in
 ## Usage
 * To run my application locally, input `npm run dev` in your terminal.
 * View my deployed Netlify URL at https://brittany-brimley-portfolio.netlify.app/
+<img width="1512" alt="reactPortfolio_about" src="https://github.com/Git-BritHub/Brittany-Portfolio-Main/assets/130286884/5ce98d8b-bf5d-4f27-ac3f-be5893c33e90">
+<img width="1512" alt="reactPortfolio_projects" src="https://github.com/Git-BritHub/Brittany-Portfolio-Main/assets/130286884/a4e5f17f-225a-4629-aba4-e97f984d68d4">
 
 ## License
 [![License: MIT](https://img.shields.io/badge/License-MIT-aqua.svg)](https://opensource.org/licenses/MIT)
