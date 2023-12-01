@@ -12,13 +12,13 @@ export default function Footer() {
     const stylesheet = {
         hover: {
             backgroundColor: 'violet',
-            border: '2px solid yellow',
+            border: '2px solid aqua',
             color: 'aqua',
             font: 'bold',
         },
         after: {
             backgroundColor: 'black',
-            border: '2px solid aqua',
+            border: '2px solid white',
             color: 'aqua',
             font: 'bold',
         },
