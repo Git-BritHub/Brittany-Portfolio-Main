@@ -1,0 +1,19 @@
+.image-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+    max-width: 750px;
+    margin: 0 auto;
+}
+
+.image-box {
+    width: 250px;
+    height: 200px;
+    background-color: #ccc;
+}
+
+@media (max-width: 800px) {
+    .image-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
