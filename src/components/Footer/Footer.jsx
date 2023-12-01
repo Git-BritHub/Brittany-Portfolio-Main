@@ -11,7 +11,7 @@ export default function Footer() {
 
     const stylesheet = {
         hover: {
-            backgroundColor: 'violet',
+            backgroundColor: 'purple',
             border: '2px solid aqua',
             color: 'aqua',
             font: 'bold',

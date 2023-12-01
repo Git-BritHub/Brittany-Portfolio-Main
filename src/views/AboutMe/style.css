@@ -1,0 +1,12 @@
+.profilePic {
+    height: 300px;
+    width: 300px;
+    border-radius: 50%;
+    border: 3px solid white;
+    object-fit:cover;
+    object-position: 100% 30%;
+  }
+
+.aboutMe h3 {
+    font-size: 20px;
+}

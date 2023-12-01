@@ -42,7 +42,7 @@ const projects = [
 function Portfolio () {
     return (
         <div>
-        <h2>Portfolio</h2>
+        <h1>Projects</h1>
         {projects.map((project, index) => (
             <Project key={index} {...project} />
         ))}
