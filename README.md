@@ -34,6 +34,8 @@ My main portfolio website to showcase my skills as a Full Stack Web Developer in
 * Navbar/Header References: https://react-bootstrap.netlify.app/docs/components/navbar
 * Header NavLinks Underline Feature: codewithMUHILAN | https://github.com/codewithMUHILAN/Reels/tree/main/MENU/Hover%20Menu%20(14-09-23)
 * https://masonreview.com/posts/how-to-embed-pdf-file-in-html-iframe/
+* https://react-bootstrap.netlify.app/docs/getting-started/introduction
+* https://regexr.com/
 
 ## Questions
 If you find any bugs or have any questions, feel free to reach out to me through GitHub at https://github.com/Git-BritHub 
