@@ -47,8 +47,8 @@ const projects = [
 
 function Portfolio () {
     return (
-        <div>
-        <h1>Projects</h1>
+        <div className='mt-5 pt-3'>
+        <h2>PROJECTS</h2>
         <div className='image-grid'>
             {projects.map((project, index) => (
                 <Project key={index} {...project} />
