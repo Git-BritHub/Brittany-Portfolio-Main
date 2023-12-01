@@ -1,19 +1,34 @@
-.image-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-gap: 20px;
-    max-width: 750px;
-    margin: 0 auto;
-}
-
 .image-box {
-    width: 250px;
-    height: 200px;
-    background-color: #ccc;
-}
-
-@media (max-width: 800px) {
-    .image-grid {
-        grid-template-columns: repeat(2, 1fr);
-    }
-}
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .image-box img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+  
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+  
+  .image-box:hover .overlay {
+    opacity: 1;
+  }
+  
+  .overlay h3 {
+    margin: 0;
+  }
