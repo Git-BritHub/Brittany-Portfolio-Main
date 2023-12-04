@@ -1,92 +1,77 @@
-import { useState } from 'react';
+// import { useState } from 'react';
 import { Form, Button, Alert } from 'react-bootstrap';
+import { useRef } from 'react';
+import emailjs from '@emailjs/browser';
 import './style.css';
 
 // Contact Form with fields for a name, an email address, and a message
 function Contact() {
-    const [formData, setFormData] = useState({
-        name: '',
-        email: '',
-        message: '',
-    });
-    const [validationErrors, setValidationErrors] = useState({
-        name: '',
-        email: '',
-    });
-    const handleInputChange = (e) => {
-        const { name, value } = e.target;
-        setFormData({
-            ...formData,
-            [name]: value,
-        });
-        // Set up email validator and create notification when invalid email is entered
-        setValidationErrors({
-            ...validationErrors,
-            [name]: value.trim() === '' ? `${name} is required` : '',
-            email: name === 'email' && !isValidEmail(value) ? 'Valid email address required' : '',
-        });
-    };
+    // const [validationErrors, setValidationErrors] = useState({
+    //     name: '',
+    //     email: '',
+    // });
 
-    const isValidEmail = (email) => {
-        // Email Regex
-        const emailRegex = /^([a-z0-9_\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,6})$/;
-        return emailRegex.test(email);
-    };
+    // const isValidEmail = (email) => {
+    //     const emailRegex = /^([a-z0-9_\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,6})$/;
+    //     return emailRegex.test(email);
+    // };
 
-    const handleSubmit = (e) => {
+    // // Set up email validator and create notification when invalid email is entered
+    // setValidationErrors({
+    //     ...validationErrors,
+    //     name: value.trim() === '' ? 'name is required' : '',
+    //     email: name === 'email' && !isValidEmail(value) ? 'Valid email address required' : '',
+    //  });
+
+    const form = useRef();
+    const sendEmail = (e) => {
         e.preventDefault();
 
-    // Check for errors before submitting form
-    const hasErrors = Object.values(validationErrors).some((error) => error !== '');
-    if (hasErrors) {
-    console.log('Form has validation errors. Please corrrect them, thanks!');
-    } else {
-        console.log('Form Submitted:', formData);
-    }
-};
+        // const service = process.env.YOUR_SERVICE_ID;
+        // const template = process.env.YOUR_TEMPLATE_ID;
+        // const public = process.env.YOUR_PUBLIC_KEY;
+
+        emailjs.sendForm(
+            'service_1wxak7l',
+            'template_i88rte7',
+            form.current,
+            // public key
+            'EshwCiWQvuN8jArOY'
+        )
+            .then((result) => {
+                console.log(form)
+                console.log(form.current[0])
+                form.current[0].value = '';
+                form.current[1].value = '';
+                form.current[2].value = 'Message Sent!';
+                console.log(result.text);
+                console.log('Message Sent')
+            }, (error) => {
+                console.log(error.text);
+            });
+    };
 
     return (
         <div className='contactHeader mt-5 pt-3'><h1>CONTACT ME</h1>
-        <Form onSubmit={handleSubmit} className='container border rounded-2 my-4'>
+        <Form ref={form} onSubmit={sendEmail} className='container border rounded-2 my-4'>
             <Form.Group controlId='formName'>
-                <Form.Label className='d-flex mt-2'>NAME</Form.Label> 
-                <Form.Control
-                    type='text' 
-                    placeholder='Enter name here' 
-                    name='name'
-                    value={formData.name}
-                    onChange={handleInputChange}
-                    onBlur={handleInputChange}
-                />
-                {validationErrors.name}
+                <Form.Label className='d-flex my-2'>NAME</Form.Label>
+                <Form.Control type='text' name='user_name' placeholder='Enter your name' />
             </Form.Group>
 
             <Form.Group controlId='formEmail'>
-                <Form.Label className='d-flex mt-2'>EMAIL</Form.Label>
-                <Form.Control
-                    type='email'
-                    placeholder='Enter email here'
-                    name='email'
-                    valude={formData.email}
-                    onChange={handleInputChange}
-                    onBlur={handleInputChange}
-                />
-                {validationErrors.email}
+                <Form.Label className='d-flex my-2'>EMAIL</Form.Label>
+                <Form.Control type='email' name='user_email' placeholder='Enter your email' />
             </Form.Group>
 
             <Form.Group controlId='formMessage'>
-            <Form.Label className='d-flex mt-2'>MESSAGE</Form.Label>
-                <Form.Control
-                    as='textarea'
-                    rows={3}
-                    placeholder='Enter your message here'
-                    name='message'
-                    value={formData.message}
-                    onChange={handleInputChange}
-                />
+                <Form.Label className='d-flex my-2'>MESSAGE</Form.Label>
+                <Form.Control as='textarea' rows={3} name='message' placeholder='Enter your message' />
             </Form.Group>
 
-            <Button variant='primary' type='submit' className='submitBtn my-3'>Submit</Button>
+            <Button variant='primary' type='submit' className='submitBtn my-3'>
+                Submit
+            </Button>
         </Form>
         </div>
     );
