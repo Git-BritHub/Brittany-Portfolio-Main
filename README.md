@@ -36,6 +36,7 @@ My main portfolio website to showcase my skills as a Full Stack Web Developer in
 * https://masonreview.com/posts/how-to-embed-pdf-file-in-html-iframe/
 * https://react-bootstrap.netlify.app/docs/getting-started/introduction
 * https://regexr.com/
+* https://www.jbinternational.co.uk/article/view/3584#:~:text=The%20easiest%20way%20to%20validate,the%20format%20on%20supported%20browsers.&text=This%20will%20cause%20the%20browser,a%20validly%20formatted%20email%20address
 
 ## Questions
 If you find any bugs or have any questions, feel free to reach out to me through GitHub at https://github.com/Git-BritHub 
