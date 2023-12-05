@@ -32,7 +32,7 @@ My main portfolio website to showcase my skills as a Full Stack Web Developer in
 ## Contributing
 * Footer Icons: https://react-icons.github.io/react-icons/icons?name=fa6
 * Navbar/Header References: https://react-bootstrap.netlify.app/docs/components/navbar
-* Header NavLinks, Underline Features, Form button: codewithMUHILAN | https://github.com/codewithMUHILAN/Reels/tree/main/MENU/Hover%20Menu%20(14-09-23)
+* Header NavLinks, Underline Features, Form button: codewithMUHILAN | https://github.com/codewithMUHILAN/Reels/tree/main/MENU/Hover%20Menu%20(14-09-23) </br> https://github.com/codewithMUHILAN/Reels/blob/main/BUTTONS/Shining%20Buttons%20(03-11-23)/index.html
 * https://masonreview.com/posts/how-to-embed-pdf-file-in-html-iframe/
 * https://react-bootstrap.netlify.app/docs/getting-started/introduction
 * https://regexr.com/
