@@ -67,10 +67,9 @@ function Contact() {
             <Form.Group controlId='formMessage'>
                 <Form.Label className='d-flex my-2'>MESSAGE</Form.Label>
                 <Form.Control as='textarea' rows={3} name='message' placeholder='Enter your message' />
-            </Form.Group>
-
-            <Button variant='primary' type='submit' className='submitBtn my-3'>
-                Submit
+        </Form.Group>
+            <Button variant='custom' type='submit' className='submitBtn my-3'>
+            SUBMIT
             </Button>
         </Form>
         </div>
