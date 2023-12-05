@@ -1,0 +1,7 @@
+.resumeUrl {
+    color: aqua;
+}
+
+.resumeUrl:hover {
+    color:violet;
+}
