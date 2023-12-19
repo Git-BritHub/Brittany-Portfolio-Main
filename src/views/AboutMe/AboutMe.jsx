@@ -13,7 +13,7 @@ function AboutMe() {
             </img>
             <h2>FULL STACK WEB DEVELOPER</h2>
             <h3>JavaScript | CSS | HTML | NodeJS | JSON | JQuery | ExpressJS | Handlebars | MySQL | MERN | MongoDB | GraphQL | ReactJS </h3>
-            <h3>Bootstrap | Tailwind | Bulma | Figma</h3>
+            <h3>NextJS | Tailwind | Bootstrap | Bulma | Figma</h3>
             <p>Hardworking software developer who gives great attention to detail while taking pride and care in the work that I do. Incredibly self-motivated with a curious mind and great love of learning. Constantly looking for ways to enhance my skills, efficiency and knowledge of our ever-changing and evolving field. Charismatic with excellent communication skills who excels in a team environment, as well as individually. Prioritizes and strives to meet a company’s goals and further its success.  </p>
         </div>
         // TODO: Add Parallax feature
