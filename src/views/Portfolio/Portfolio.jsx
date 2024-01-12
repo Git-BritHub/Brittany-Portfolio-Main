@@ -9,7 +9,7 @@ import theWeb from '../../assets/images/theWeb.png';
 import concertGroupie from '../../assets/images/concertGroupie.png';
 import novelPursuit from '../../assets/images/novelPursuit.png';
 import scribeMaster from '../../assets/images/scribeMaster.png';
-import weatherDashboard from '../../assets/images/weatherDashboard.png';
+import workDayScheduler from '../../assets/images/workDayScheduler.png';
 
 const projects = [
     {
@@ -39,9 +39,9 @@ const projects = [
         url: 'https://scribe-master-3000-production.up.railway.app/',
     },
     {
-        title: 'Destination Weather Dashboard',
-        screenshot: weatherDashboard,
-        url: 'https://git-brithub.github.io/Destination-Weather-Dashboard/',
+        title: 'Work Day Scheduler',
+        screenshot: workDayScheduler,
+        url: 'https://git-brithub.github.io/Company-Work-Day-Scheduler/',
     },
 ];
 
