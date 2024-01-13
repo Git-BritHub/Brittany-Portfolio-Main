@@ -41,9 +41,6 @@ h1 {
     transform: translateX(100%);
 }
 
-
-
-/* 2nd button     Follow - @codewith_muhilan */
 .submitBtn:nth-child(2) {
     border: 1px solid #e819ef;
 }
@@ -54,4 +51,28 @@ h1 {
 
 .submitBtn:nth-child(2):hover {
     box-shadow: 0 0 20px 5px #e819ef;
+}
+
+.form-group.has-error .form-control,
+.form-group.has-error .form-control:empty {
+    border-color: violet;
+}
+
+.alert-success {
+    background: #000000;
+    border-color: #00fffc;
+    color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 20px 5px #00fffc;
+    transition: 0.6s;
+}
+
+.alert-danger {
+    background-color: #000000;
+    border-color: violet;
+    color: violet;
+}
+
+.submitDanger {
+    border-radius: 0px;
 }
