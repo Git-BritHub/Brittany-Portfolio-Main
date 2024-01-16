@@ -1,6 +1,10 @@
 #root {
   margin-bottom: 75px;
-  /* padding: 2rem; */
   text-align: center;
   color: #fff;
+}
+body {
+  margin-bottom: 50px;
+  font: bold 14px/1.4 'Open Sans', arial, sans-serif;
+  background: black;
 }
