@@ -1,9 +1,6 @@
 import profilePic from '../../assets/images/profile_pic.png'
 import './style.css';
 
-// const styles = {
-// };
-
 function AboutMe() {
     const imagePath = profilePic;
     return (
