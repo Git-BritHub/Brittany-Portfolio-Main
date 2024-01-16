@@ -107,7 +107,7 @@ function Contact() {
     };
 
     return (
-        <div className='contactHeader mt-5 pt-3'>
+        <div className='contactHeader justify-content-center align-items-center mt-5 pt-3'>
             <h1>CONTACT ME</h1>
             <Form ref={form} onSubmit={sendEmail} className='container border rounded-2 my-4'>
 
