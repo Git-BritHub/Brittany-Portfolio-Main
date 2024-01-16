@@ -25,8 +25,8 @@ export default function Footer() {
     };
 
     return (
-        <footer className='text-center text-white bg-black'>
-            <div className='container px-3'>
+        <footer className='text-center text-white bg-black w-100'>
+            <div className='container-fluid px-3'>
                 <section className='my-2'>
                     <a className='btn btn-outline-light btn floating m-1 rounded-circle'
                         href='https://www.linkedin.com/in/brittany-brimley-390a81293/' target='_blank 'role='button'
