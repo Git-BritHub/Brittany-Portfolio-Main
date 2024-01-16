@@ -1,22 +1,31 @@
+.portfolioProjects {
+  padding: 2rem;
+}
+
 .image-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  justify-content: center;
+  align-items: start;
+  grid-template-columns: repeat(3, minmax(250px, 1fr));
   grid-gap: 15px;
-  max-width: 750px;
   margin: 50px auto;
+  max-width: calc(3 * 250px + 2 * 15px);
 }
 
-.image-box {
-  width: 250px;
-  height: 150px;
-  border-radius: 5px;
-}
-
-@media (max-width: 800px) {
+@media (max-width: 768px) {
   .image-grid {
-      grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(2, minmax(250px, 1fr));
+    max-width: calc(2 * 250px + 1 * 15px);
   }
 }
+
+@media (max-width: 480px) {
+  .image-grid {
+    grid-template-columns: 1fr;
+    max-width: 250px;
+  }
+}
+
 
 /* .Portfolio {
     background: #111;

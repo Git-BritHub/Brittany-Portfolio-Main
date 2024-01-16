@@ -43,7 +43,7 @@ const projects = [
 
 function Portfolio () {
     return (
-        <div className='mt-5 pt-3'>
+        <div className='portfolioProjects mt-5 pt-3'>
         <h2>PROJECTS</h2>
         <div className='image-grid'>
             {projects.map((project, index) => (
