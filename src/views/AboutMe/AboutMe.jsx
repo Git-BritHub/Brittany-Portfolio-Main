@@ -1,13 +1,18 @@
 import profilePic from '../../assets/images/profile_pic.png'
+import { LazyLoadImage } from 'react-lazy-load-image-component';
+import 'react-lazy-load-image-component/src/effects/opacity.css';
 import './style.css';
 
 function AboutMe() {
     const imagePath = profilePic;
     return (
         <div className='aboutMe justify-content-center align-items-center'>
-            <img src={imagePath} alt='profile picture' 
-                className='profilePic justify-content-center align-items-center mt-5 mb-5'>
-            </img>
+            <LazyLoadImage
+                src={imagePath} 
+                alt='profile picture' 
+                className='profilePic justify-content-center align-items-center mt-5 mb-5'
+                effect="opacity"
+            />
             <h2>FULL STACK WEB DEVELOPER</h2>
             <h3>JavaScript | CSS | HTML | NodeJS | JSON | JQuery | ExpressJS | Handlebars | JWT | MySQL | MERN | MongoDB | GraphQL | Apollo </h3>
             <h3>React | NextJS | Tailwind CSS | Bootstrap | Bulma | Figma</h3>
