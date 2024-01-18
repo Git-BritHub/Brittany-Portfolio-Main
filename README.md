@@ -4,6 +4,7 @@ React Vite Build</br>
 
 ## Table of Contents
 * [Description](#description)
+* [Usage](#usage)
 * [License](#license)
 * [Contributing](#contributing)
 * [Questions](#questions)
