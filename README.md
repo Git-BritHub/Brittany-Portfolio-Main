@@ -12,7 +12,9 @@ React Vite Build</br>
 
 
 ## Description
-My portfolio website to showcase some of my skills as a Full Stack Web Developer in a React Vite application. In this website, viewers will be able to access a few of my projects from my GitHub profile, including collaborative projects. Users can also view information about myself, skillset, contact information and resume, as well as reach out to me via my Contact Form. 
+Welcome to my personal portfolio website, a dynamic and interactive platform designed to exhibit my expertise as a Full Stack Web Developer. This site, meticulously crafted using React, serves as a window into my professional journey, showcasing a diverse range of web applications and projects that I have developed both collaboratively and independently.
+</br>
+Discover more about my skills, access or download my resume, and view my contact details. Prefer a quick chat? Drop me a message through my user-friendly Contact Form. Explore, connect, and let's talk tech!
 
 ## Usage
 * View my deployed Netlify URL at https://brittany-brimley-portfolio.netlify.app/
@@ -31,7 +33,7 @@ My portfolio website to showcase some of my skills as a Full Stack Web Developer
 * https://www.jbinternational.co.uk/article/view/3584#:~:text=The%20easiest%20way%20to%20validate,the%20format%20on%20supported%20browsers.&text=This%20will%20cause%20the%20browser,a%20validly%20formatted%20email%20address
 
 ## Questions
-If you find any bugs or have any questions, feel free to reach out via my portfolio form or GitHub at https://github.com/Git-BritHub 
+If you find any bugs or have any questions, feel free to reach out via my portfolio Contact Form or GitHub at https://github.com/Git-BritHub.
 
 ## Current Plugins Available:
 - [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
