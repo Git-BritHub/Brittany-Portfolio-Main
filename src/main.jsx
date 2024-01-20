@@ -3,8 +3,6 @@ import ReactDOM from 'react-dom/client'
 // Import React router
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 
-// import 'slick-carousel/slick/slick.css';
-// import 'slick-carousel/slick/slick-theme.css';
 import './index.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.min.js';
