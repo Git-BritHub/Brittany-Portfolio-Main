@@ -7,16 +7,21 @@ import 'swiper/css';
 import 'swiper/css/effect-coverflow';
 import 'swiper/css/pagination';
 import 'swiper/css/navigation';
-import { EffectCoverflow, Pagination, Navigation } from 'swiper/modules';
+import 'swiper/css/free-mode';
+import 'swiper/css/scrollbar';
+import { EffectCoverflow, Pagination, Navigation, FreeMode, Scrollbar, Mousewheel } from 'swiper/modules';
 
 const ProjectCarousel = ({ projects }) => {
     return (
         <>
           <Swiper
             effect={'coverflow'}
-            grabCursor={true}
             centeredSlides={true}
+            direction={'horizontal'}
             slidesPerView={'auto'}
+            freeMode={true}
+            scrollbar={true}
+            mousewheel={true}
             coverflowEffect={{
               rotate: 50,
               stretch: 0,
@@ -26,13 +31,14 @@ const ProjectCarousel = ({ projects }) => {
             }}
             loop={true}
             pagination={true}
-            navication={true}
-            modules={[EffectCoverflow, Pagination, Navigation]}
+            // navigation={true}
+            modules={[EffectCoverflow, Pagination, Navigation, FreeMode, Scrollbar, Mousewheel]}
             className="mySwiper"
           >
         {projects.map((project, index) => (
           <SwiperSlide
             key={index}
+            // className='swiperSlide'
             style={{
               backgroundImage: `url(${project.screenshot})`,
               backgroundPosition: 'center',
@@ -42,7 +48,7 @@ const ProjectCarousel = ({ projects }) => {
               height: '400px',
             }}
           />
-        ))}
+          ))}
       </Swiper>
       </>
     );
