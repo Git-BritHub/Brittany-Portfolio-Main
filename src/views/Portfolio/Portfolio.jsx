@@ -45,7 +45,7 @@ function Portfolio () {
     return (
         <div className='portfolioProjects mt-5 pt-3'>
             <h2>PROJECTS</h2>
-            <div className='projectCarousel'>
+            <div className='projectCarousel pb-5'>
             <ProjectCarousel projects={projects} />
             </div>
             <div className='image-grid'>

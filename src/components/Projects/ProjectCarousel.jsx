@@ -5,11 +5,8 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 // Import Swiper styles
 import 'swiper/css';
 import 'swiper/css/effect-coverflow';
-import 'swiper/css/pagination';
-import 'swiper/css/navigation';
 import 'swiper/css/free-mode';
-import 'swiper/css/scrollbar';
-import { EffectCoverflow, Pagination, Navigation, FreeMode, Scrollbar, Mousewheel } from 'swiper/modules';
+import { EffectCoverflow, FreeMode, Mousewheel } from 'swiper/modules';
 
 const ProjectCarousel = ({ projects }) => {
     return (
@@ -19,9 +16,17 @@ const ProjectCarousel = ({ projects }) => {
             centeredSlides={true}
             direction={'horizontal'}
             slidesPerView={'auto'}
-            freeMode={true}
-            scrollbar={true}
-            mousewheel={true}
+            freeMode={{
+                enabled: true,
+                momentum: true,
+                momentumBounceRatio: 3,
+                momentumRatio: 1, 
+                momentumVelocityRatio: 1,
+                sticky: true
+            }}
+            mousewheel={{
+                forceToAxis: true
+            }}
             coverflowEffect={{
               rotate: 50,
               stretch: 0,
@@ -29,16 +34,15 @@ const ProjectCarousel = ({ projects }) => {
               modifier: 1,
               slideShadows: true,
             }}
+            initialSlide={1}
             loop={true}
-            pagination={true}
-            // navigation={true}
-            modules={[EffectCoverflow, Pagination, Navigation, FreeMode, Scrollbar, Mousewheel]}
+            modules={[EffectCoverflow, FreeMode, Mousewheel]}
             className="mySwiper"
           >
         {projects.map((project, index) => (
           <SwiperSlide
             key={index}
-            // className='swiperSlide'
+            className='swiperSlide'
             style={{
               backgroundImage: `url(${project.screenshot})`,
               backgroundPosition: 'center',
