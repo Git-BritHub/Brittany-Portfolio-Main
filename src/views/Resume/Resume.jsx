@@ -1,4 +1,4 @@
-import resume from '../../assets/files/Brimley_Resume.pdf';
+import resume from '../../assets/files/Brimley_Github_Resume.pdf';
 import './style.css';
 
 function Resume() {
