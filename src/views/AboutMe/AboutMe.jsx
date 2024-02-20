@@ -15,7 +15,7 @@ function AboutMe() {
             />
             <h2>FULL STACK WEB DEVELOPER</h2>
             <h3>
-                JavaScript | TypeScript | CSS | HTML | NodeJS | JSON | JQuery | ExpressJS | Handlebars | JWT | MySQL | MERN | MongoDB | GraphQL | Apollo 
+                JavaScript | TypeScript | MERN Stack | CSS | HTML | NodeJS | JSON | JQuery | ExpressJS | Handlebars | JWT | MySQL | MongoDB | GraphQL | Apollo 
             </h3>
             <h3>
                 React | NextJS | DaisyUI | Tailwind CSS | Bootstrap | Bulma | Figma | Netlify | Swiper | GSAP    
