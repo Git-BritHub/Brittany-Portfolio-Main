@@ -44,7 +44,7 @@ const projects = [
 function Portfolio () {
     return (
         <div className='portfolioProjects mt-5 pt-3'>
-            <h2>PROJECTS</h2>
+            <h2 className="mt-5">PROJECTS</h2>
             <div className='projectCarousel pb-5'>
             <ProjectCarousel projects={projects} />
             </div>

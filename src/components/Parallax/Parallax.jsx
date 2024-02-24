@@ -16,13 +16,13 @@ const sections = [
     { title: "Nerd. I am nerd.", image: img5 },
   ];
 
-export default function Parallax () {
+  export default function Parallax () {
   useEffect(() => {
     gsapInit();
   }, []);
 
   return sections.map((section, index) => (
-    <div key={index} className="parallaxBody"> {/* Key is based on the index */}
+    <div key={index} className="parallaxBody">
       <section className="parallaxSection">
         <div className="parallaxOuter">
           <div className="parallaxInner">

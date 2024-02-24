@@ -1,4 +1,5 @@
-import Parallax from '../../components/Parallax/Parallax';
+// import React, { useRef } from 'react';
+// import Parallax from '../../components/Parallax/Parallax';
 import profilePic from '../../assets/images/profile_pic.png'
 import { LazyLoadImage } from 'react-lazy-load-image-component';
 import 'react-lazy-load-image-component/src/effects/opacity.css';
@@ -6,9 +7,10 @@ import './style.css';
 
 function AboutMe() {
     const imagePath = profilePic;
+    // const targetRef = useRef(null);
     return (
         <>
-        <div className='aboutMe justify-content-center align-items-center'>
+        <div className='aboutMe justify-content-center align-items-center mt-5'>
             <LazyLoadImage
                 src={imagePath} 
                 alt='profile picture' 
@@ -26,7 +28,7 @@ function AboutMe() {
             </p>
             </div>
         </div>
-        <Parallax />
+        {/* <Parallax targetRef={targetRef} /> */}
         </>
     )
 }

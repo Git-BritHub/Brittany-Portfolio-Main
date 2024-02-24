@@ -1,5 +1,6 @@
 .aboutMe {
     padding: 1rem 3rem;
+    z-index: 3;
 }
 .profilePic {
     height: 300px;
