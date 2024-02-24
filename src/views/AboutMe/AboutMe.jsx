@@ -26,7 +26,7 @@ function AboutMe() {
             </p>
             </div>
         </div>
-            <Parallax />
+        <Parallax />
         </>
     )
 }

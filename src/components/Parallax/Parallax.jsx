@@ -21,20 +21,20 @@ export default function Parallax () {
     gsapInit();
   }, []);
 
-  return sections.map((section) => (
-    <div className="parallax">
-    <section key={section.title} className="parallaxSection">
-      <div className="parallaxOuter">
-        <div className="parallaxInner">
-          <div
-            className="parallaxBg one"
-            style={{ backgroundImage: `url(${section.image})` }}
-          >
-            <h2 className="parallaxTitle">{section.title}</h2>
+  return sections.map((section, index) => (
+    <div key={index} className="parallaxBody"> {/* Key is based on the index */}
+      <section className="parallaxSection">
+        <div className="parallaxOuter">
+          <div className="parallaxInner">
+            <div
+              className="parallaxBg one"
+              style={{ backgroundImage: `url(${section.image})` }}
+            >
+              <h2 className="parallaxTitle">{section.title}</h2>
+            </div>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
     </div>
   ));
-};
+}
