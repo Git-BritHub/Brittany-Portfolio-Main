@@ -19,7 +19,7 @@ function AboutMe() {
             <div className="">
             <h1>FULL STACK WEB DEVELOPER</h1>
             <h2>
-                JavaScript | TypeScript | MERN Stack | HTML | NodeJS | JSON     JQuery | ExpressJS | Handlebars | JWT | MySQL | MongoDB | GraphQL | Apollo | React | NextJS | DaisyUI | CSS | Tailwind CSS | Bootstrap | Bulma | Figma | Netlify | Swiper | GSAP    
+                JavaScript | TypeScript | MERN Stack | HTML | NodeJS | JSON     JQuery | ExpressJS | Handlebars | JWT | MySQL | MongoDB | GraphQL | Apollo | React | NextJS | DaisyUI | CSS | Tailwind CSS | Bootstrap | Bulma | Figma | Netlify | SwiperJS | GSAP    
             </h2>
 
             <p>
