@@ -7,7 +7,6 @@ import './style.css';
 
 function AboutMe() {
     const imagePath = profilePic;
-    // const targetRef = useRef(null);
     return (
         <>
         <div className='aboutMe justify-content-center align-items-center mt-5'>
@@ -28,7 +27,7 @@ function AboutMe() {
             </p>
             </div>
         </div>
-        {/* <Parallax targetRef={targetRef} /> */}
+        {/* <Parallax /> */}
         </>
     )
 }
