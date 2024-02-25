@@ -20,15 +20,11 @@
 }
 
 @media (max-width: 480px) {
+  .portfolioProjects {
+    padding: 1rem 1rem 1rem 1rem;
+  }
   .image-grid {
     grid-template-columns: 1fr;
     max-width: 250px;
   }
 }
-
-
-/* .projectCarousel {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  } */
