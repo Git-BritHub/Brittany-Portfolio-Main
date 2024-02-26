@@ -27,6 +27,7 @@ const gsapInit = () => {
   const gotoSection = (index, direction) => {
     index = wrap(index);
     animating = true;
+    // TODO: Create let variable for 'end' to prevent issues and parallax from triggering on page load
     let fromTop = direction === -1,
       dFactor = fromTop ? -1 : 1,
       tl = gsap.timeline({
@@ -73,8 +74,10 @@ const sections = [
 
   useGSAP(() => {
     gsapInit();
-    gsap.to(box.current, {x:360});
-  }, [endx]);
+    // TODO: uncomment once end is defined
+    // gsap.to(title.current, {x:360});
+  // }, [endx]);
+  }, []);
 
   return sections.map((section, index) => (
     <div key={index} className="parallaxBody">

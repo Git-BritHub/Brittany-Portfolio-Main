@@ -19,7 +19,7 @@ function AboutMe() {
             <div className="">
             <h1>FULL STACK WEB DEVELOPER</h1>
             <h2>
-                JavaScript | TypeScript | MERN Stack | HTML | NodeJS | JSON     JQuery | ExpressJS | Handlebars | JWT | MySQL | MongoDB | GraphQL | Apollo | React | NextJS | DaisyUI | CSS | Tailwind CSS | Bootstrap | Bulma | Figma | Netlify | SwiperJS | GSAP    
+                JavaScript | TypeScript | MERN Stack | HTML | NodeJS | JSON     JQuery | ExpressJS | Handlebars | JWT | MySQL | MongoDB | GraphQL | Apollo | React | NextJS | DaisyUI | CSS | Tailwind CSS | Bootstrap | Bulma | Figma | Netlify | SwiperJS    
             </h2>
 
             <p>
@@ -27,6 +27,7 @@ function AboutMe() {
             </p>
             </div>
         </div>
+        {/* TODO: uncomment once issue of parallax triggering on page load is resolved */}
         {/* <Parallax /> */}
         </>
     )

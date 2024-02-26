@@ -22,13 +22,14 @@
     top: 0;
     position: fixed;
     visibility: hidden;
-    z-index: 1;
+    z-index: 4;
   }
   .parallaxOuter,
   .parallaxInner {
     width: 100%;
     height: 100%;
     overflow-y: hidden;
+    z-index:4;
   }
   .parallaxBg {
     display: grid;
@@ -41,7 +42,7 @@
     background-position: center;
   }
   .parallaxSection .parallaxBg .parallaxTitle {
-    z-index: 2;
+    z-index: 4;
   }
   .parallaxSection .parallaxBg .clip-text {
     overflow: hidden;
