@@ -12,7 +12,7 @@ export default function Header() {
             <div className='container-fluid'>
                 <Link key={1} className={currentView === 'AboutMe' ? 'navbar-brand active text-white' : 'navbar-brand text-white'} onClick={() => handleViewChange('AboutMe')} to='/'>Brittany Brimley</Link>
                 <button
-                    className='navbar-toggler'
+                    className='navbar-toggler custom-toggler'
                     type='button'
                     data-bs-toggle='collapse'
                     data-bs-target='#navbarNav'
