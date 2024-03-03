@@ -41,12 +41,20 @@
 
 
 /* Carousel Styles */
-.swiper {
-  padding-top: 50px;
-  padding-bottom: 80px;
-}
-
 .mySwiper {
   -webkit-box-reflect: below -150px
   linear-gradient(transparent, transparent, #0006);
+}
+
+.swiper img {
+  padding-top: 83px;
+  padding-bottom: 50px;
+}
+
+.swiper-slide img {
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  display: block;
+  width: 100%;
 }

@@ -1,6 +1,7 @@
-import React from 'react';
-import './style.css';
+import { LazyLoadImage } from 'react-lazy-load-image-component';
+import 'react-lazy-load-image-component/src/effects/opacity.css';
 import { Swiper, SwiperSlide } from 'swiper/react';
+import './style.css';
 
 // Import Swiper styles
 import 'swiper/css';
@@ -39,19 +40,13 @@ const ProjectCarousel = ({ projects }) => {
             modules={[EffectCoverflow, FreeMode, Mousewheel]}
             className="mySwiper"
           >
-        {projects.map((project, index) => (
-          <SwiperSlide
-            key={index}
-            className='swiperSlide'
-            style={{
-              backgroundImage: `url(${project.screenshot})`,
-              backgroundPosition: 'center',
-              backgroundSize: 'contain',
-              backgroundRepeat: 'no-repeat',
-              width: '400px',
-              height: '400px',
-            }}
-          />
+        {projects.map((project, index ) => (
+          <SwiperSlide key={index} style={{width:'400px', height:'400px'}}>
+            <LazyLoadImage
+              src={project.screenshot}
+              alt={project.title}
+            />
+          </SwiperSlide>
           ))}
       </Swiper>
       </>
