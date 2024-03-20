@@ -28,6 +28,7 @@ function AboutMe() {
             </>
         </div>
         {/* TODO: uncomment once issue of parallax triggering on page load is resolved */}
+        {/* TODO: look into including above section in parallax as well to prevent parallax issues */}
         {/* <Parallax /> */}
         </>
     )
