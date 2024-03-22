@@ -6,6 +6,7 @@ export default function Error() {
 
     return (
         <div id="error">
+            {/* TODO: add funny image */}
             <h1 className="py-5 mt-5">Ruh Roh...</h1>
             <p>An unexpected error has occurred.</p>
             <p>
