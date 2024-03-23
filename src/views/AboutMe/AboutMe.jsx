@@ -73,7 +73,7 @@ const gsapInit = () => {
 
 const sections = [
     // { profileImage: profilePic, h1: "FULL STACK WEB DEVELOPER", title: "", text:"JavaScript | TypeScript | MERN Stack | HTML | CSS | NodeJS | JSON | JQuery | ExpressJS | Handlebars | JWT | MySQL | MongoDB | GraphQL | Apollo | React | NextJS | DaisyUI | Tailwind CSS | Bootstrap | Bulma | Figma | Netlify | SwiperJS | Google Cloud"},
-    {title: "", text: ""},
+    {title: "", text: "", image: ""},
     { title: "Hardworking", text: "Highly Self Motivated", image: img1 },
     { title: "Innovative", text: "There's Always a Solution", image: img2 },
     { title: "Curious", text: "Love of Learning", image: img3 },
