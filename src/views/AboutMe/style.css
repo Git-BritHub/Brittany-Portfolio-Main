@@ -10,12 +10,14 @@
     object-fit:cover;
     object-position: 100% 30%;
   }
-
+.aboutMe h1 {
+  font-size: 32px;
+  text-align: center;
+}
 .aboutMe h2 {
-    font-size: 20px;
+    font-size: 28px;
     margin: auto;
 }
-
 .aboutMe p {
     font-size: 18px;
     margin: 30px 50px;
@@ -26,27 +28,31 @@
         margin-top: 10px;
         height: 240px;
         width: 240px; 
-
+    }
+    .aboutMe h1 {
+      padding: .5rem .5rem;
+      font-size: auto;
+      letter-spacing: auto;
     }
     .aboutMe p {
         font-size: auto;
         margin: 30px 15px;
     }
 }
-
 @media (max-width: 362px) {
-    .aboutMe {
-        padding: 1rem;
-    }
+  .aboutMe h1 {
+    padding: .5rem .5rem;
+    font-size: auto;
+    letter-spacing: auto;
+  }
     .aboutMe p {
         font-size: auto;
         margin: 20px 20px;
     }
 }
-
 @media (max-width: 345px) {
     .aboutMe {
-        padding: 1rem;
+        padding: .5rem;
     }
     .profilePic {
         height: 230px;
@@ -57,10 +63,9 @@
         margin: 15px 15px;
     }
 }
-
 @media (max-width: 302px) {
     .aboutMe {
-        padding: 1rem;
+        padding: .5rem;
     }
     .profilePic {
         height: 225px;
@@ -81,7 +86,6 @@
     background: black;
     font-family: "Euclid Circular A", "Poppins";
   }
-  
   .parallaxTitle {
     font-size: 5vw;
     font-weight: 500;
@@ -94,14 +98,12 @@
     font-size: 3vw;
     margin-bottom: 1rem;
   }
-
   .parallaxTitle p {
     text-align: center;
     margin: 1rem 4rem;
     font-size: 2vw;
     letter-spacing: 12px;
   }
-  
   .parallaxSection {
     height: 100%;
     width: 100%;

@@ -101,7 +101,7 @@ function AboutMe() {
   
   return (
     <>
-      <div className='aboutMe justify-content-center align-items-center mt-5'>
+      <div className='aboutMe justify-content-center align-items-center mt-5 pt-5'>
           <LazyLoadImage
               src={imagePath} 
               alt='profile picture' 
@@ -109,7 +109,7 @@ function AboutMe() {
               effect="opacity"
           />
           <>
-          <h1>FULL STACK WEB DEVELOPER</h1>
+          <h1 className="aboutMe mb-2">FULL STACK WEB DEVELOPER</h1>
           <h2>
             JavaScript | TypeScript | MERN Stack | HTML | CSS | NodeJS | JSON | JQuery | ExpressJS | Handlebars | JWT | MySQL | MongoDB | GraphQL | Apollo | React | NextJS | DaisyUI | Tailwind CSS | Bootstrap | Bulma | Figma | Netlify | SwiperJS | Google Cloud
           </h2>
