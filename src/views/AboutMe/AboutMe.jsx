@@ -18,61 +18,70 @@ import img5 from '../../assets/images/img5.jpg';
 function AboutMe() {
     const imagePath = profilePic;
 
-const gsapInit = () => {
-  gsap.registerPlugin(Observer);
-
-  let sections = document.querySelectorAll("section"),
-    images = document.querySelectorAll(".parallaxBg"),
-    outerWrappers = gsap.utils.toArray(".parallaxOuter"),
-    innerWrappers = gsap.utils.toArray(".parallaxInner"),
-    currentIndex = -1,
-    wrap = gsap.utils.wrap(0, sections.length),
-    animating;
-
-  gsap.set(outerWrappers, { yPercent: 100 });
-  gsap.set(innerWrappers, { yPercent: -100 });
-
-  const gotoSection = (index, direction) => {
-    index = wrap(index);
-    animating = true;
-    let fromTop = direction === -1,
-      dFactor = fromTop ? -1 : 1,
-      tl = gsap.timeline({
-        defaults: { duration: 1.25, ease: "power1.inOut" },
-        onComplete: () => (animating = false),
-      });
-    if (currentIndex >= 0) {
-      gsap.set(sections[currentIndex], { zIndex: 0 });
-      tl.to(images[currentIndex], { yPercent: -15 * dFactor }).set(
-        sections[currentIndex],
-        { autoAlpha: 0 }
-      );
-    }
-    gsap.set(sections[index], { autoAlpha: 1, zIndex: 1 });
-    tl.fromTo(
-      [outerWrappers[index], innerWrappers[index]],
-      { yPercent: (i) => (i ? -100 * dFactor : 100 * dFactor) },
-      { yPercent: 0 },
-      0
-    ).fromTo(images[index], { yPercent: 15 * dFactor }, { yPercent: 0 }, 0);
+    const gsapInit = () => {
+      gsap.registerPlugin(Observer);
     
-    currentIndex = index;
-  };
-
-  Observer.create({
-    type: "wheel,touch,pointer",
-    wheelSpeed: -1,
-    onDown: () => !animating && gotoSection(currentIndex - 1, -1),
-    onUp: () => !animating && gotoSection(currentIndex + 1, 1),
-    tolerance: 10,
-    preventDefault: true,
-  });
-
-  gotoSection(0, 1);
-};
+      let sections = document.querySelectorAll("section"),
+        images = document.querySelectorAll(".parallaxBg"),
+        outerWrappers = gsap.utils.toArray(".parallaxOuter"),
+        innerWrappers = gsap.utils.toArray(".parallaxInner"),
+        currentIndex = 0, // Start with the first section
+        wrap = (index) => { // Custom wrap function for looping
+          if (index < 0) return sections.length - 1; // Wrap to last section if index is negative
+          if (index >= sections.length) return 0; // Wrap to first section if index exceeds the number of sections
+          return index; // Return the index if no wrapping is needed
+        },
+        animating = false;
+    
+      gsap.set(outerWrappers, { yPercent: 100 });
+      gsap.set(innerWrappers, { yPercent: -100 });
+    
+      const gotoSection = (index, direction) => {
+        index = wrap(index); // Ensure the index wraps around for looping
+        if (!outerWrappers[index] || !innerWrappers[index] || !images[index]) {
+          console.warn('Element not found for index: ', index);
+          return; // Exit the function early if any element is missing
+        }
+        animating = true;
+        let fromTop = direction === -1,
+          dFactor = fromTop ? -1 : 1,
+          tl = gsap.timeline({
+            defaults: { duration: 1.25, ease: "power1.inOut" },
+            onComplete: () => (animating = false),
+          });
+    
+        if (currentIndex >= 0) {
+          gsap.set(sections[currentIndex], { zIndex: 0 });
+          tl.to(images[currentIndex], { yPercent: -15 * dFactor }).set(
+            sections[currentIndex],
+            { autoAlpha: 0 }
+          );
+        }
+    
+        gsap.set(sections[index], { autoAlpha: 1, zIndex: 1 });
+        tl.fromTo(
+          [outerWrappers[index], innerWrappers[index]],
+          { yPercent: (i) => (i ? -100 * dFactor : 100 * dFactor) },
+          { yPercent: 0 },
+          0
+        ).fromTo(images[index], { yPercent: 15 * dFactor }, { yPercent: 0 }, 0);
+    
+        currentIndex = index;
+      };
+    
+      Observer.create({
+        type: "wheel,touch,pointer",
+        wheelSpeed: -1,
+        onDown: () => !animating && gotoSection(currentIndex - 1, -1),
+        onUp: () => !animating && gotoSection(currentIndex + 1, 1),
+        tolerance: 10,
+        preventDefault: true,
+      });
+    
+      gotoSection(0, 1); // Initialize the first section
+    };
 
 const sections = [
-    // { profileImage: profilePic, h1: "FULL STACK WEB DEVELOPER", title: "", text:"JavaScript | TypeScript | MERN Stack | HTML | CSS | NodeJS | JSON | JQuery | ExpressJS | Handlebars | JWT | MySQL | MongoDB | GraphQL | Apollo | React | NextJS | DaisyUI | Tailwind CSS | Bootstrap | Bulma | Figma | Netlify | SwiperJS | Google Cloud"},
     {title: "", text: "", image: ""},
     { title: "Hardworking", text: "Highly Self Motivated", image: img1 },
     { title: "Innovative", text: "There's Always a Solution", image: img2 },
@@ -86,6 +95,7 @@ const sections = [
     gsap.registerPlugin(useGSAP);
     gsapInit();
   }, []);
+  
     return (
       <>
         <div className='aboutMe justify-content-center align-items-center mt-5'>
