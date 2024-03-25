@@ -26,10 +26,10 @@ function AboutMe() {
       currentIndex = 0, 
       // Custom wrap function for looping
       wrap = (index) => { 
-        // Wrap to last section if index is negative
-        if (index < 0) return sections.length - 1; 
+        // Wrap to first section if index is negative
+        if (index < 0) return 0; 
         // Wrap to first section if index exceeds the number of sections
-        if (index >= sections.length) return 0; 
+        if (index + 1 >= sections.length) return 0; 
         // Return the index if no wrapping is needed
         return index; 
       },
@@ -105,7 +105,7 @@ function AboutMe() {
           <LazyLoadImage
               src={imagePath} 
               alt='profile picture' 
-              className='profilePic justify-content-center align-items-center mt-5 mb-5'
+              className='profilePic justify-content-center align-items-center mt-5 mb-4'
               effect="opacity"
           />
           <>
