@@ -86,7 +86,7 @@ function AboutMe() {
   };
 
   const sections = [
-      {title: "", text: "", image: ""},
+      { title: "", text: "", image: "" },
       { title: "Hardworking", text: "Highly Self Motivated", image: img1 },
       { title: "Innovative", text: "There's Always a Solution", image: img2 },
       { title: "Curious", text: "Love of Learning", image: img3 },
@@ -111,7 +111,7 @@ function AboutMe() {
           <>
           <h1 className="aboutMe mb-2">FULL STACK WEB DEVELOPER</h1>
           <h2>
-            JavaScript | TypeScript | MERN Stack | HTML | CSS | NodeJS | JSON | JQuery | ExpressJS | Handlebars | JWT | MySQL | MongoDB | GraphQL | Apollo | React | NextJS | DaisyUI | Tailwind CSS | Bootstrap | Bulma | Figma | Netlify | SwiperJS | Google Cloud
+            JavaScript | TypeScript | MERN Stack | HTML | CSS | NodeJS | JSON | JQuery | ExpressJS | Handlebars | JWT | MySQL | MongoDB | GraphQL | Apollo | React | NextJS | DaisyUI | Tailwind CSS | Bootstrap | Bulma | Figma | Netlify | SwiperJS | Google Cloud | GSAP
           </h2>
           </>
       </div>
@@ -125,7 +125,6 @@ function AboutMe() {
                 style={{ backgroundImage: `url(${section.image})` }}
               >
               <div className="parallaxTitle">
-                <h1>{section.h1}</h1>
                 <h2>{section.title}</h2>
                 <p>{section.text}</p>
               </div>
