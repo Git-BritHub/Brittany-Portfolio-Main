@@ -81,7 +81,9 @@ const sections = [
     { title: "Nerd", text: "I am nerd", image: img5 },
   ];
 
+  
   useGSAP(() => {
+    gsap.registerPlugin(useGSAP);
     gsapInit();
   }, []);
     return (
