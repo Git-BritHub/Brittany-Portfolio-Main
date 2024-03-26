@@ -3,4 +3,6 @@ function ProjectModal() {
         <>
         </>
     )
-} 
+}
+
+export default ProjectModal;

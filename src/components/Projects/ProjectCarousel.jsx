@@ -1,15 +1,22 @@
+import React, { useState } from "react";
+import { FaEllipsis } from "react-icons/fa6";
+import ProjectModal from "./ProjectModal";
 import { LazyLoadImage } from 'react-lazy-load-image-component';
 import 'react-lazy-load-image-component/src/effects/opacity.css';
-import { Swiper, SwiperSlide } from 'swiper/react';
 import './style.css';
 
 // Import Swiper styles
+import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/effect-coverflow';
 import 'swiper/css/free-mode';
 import { EffectCoverflow, FreeMode, Mousewheel } from 'swiper/modules';
 
 const ProjectCarousel = ({ projects }) => {
+  const [selectedProject, setSelectedProject] = useState(null);
+  const openModal = (project) => {
+    setSelectedProject(project);
+  }
     return (
         <>
           <Swiper
@@ -40,14 +47,20 @@ const ProjectCarousel = ({ projects }) => {
             modules={[EffectCoverflow, FreeMode, Mousewheel]}
             className="mySwiper"
           >
-        {projects.map((project, index ) => (
-          <SwiperSlide key={index} style={{width:'400px', height:'400px'}}>
-            <LazyLoadImage
-              src={project.screenshot}
-              alt={project.title}
-            />
-          </SwiperSlide>
-          ))}
+        {projects.map((project, index) => (
+  <SwiperSlide key={index} style={{width:'400px', height:'400px'}}>
+    <div className="slide-content-wrapper">
+      <LazyLoadImage
+        src={project.screenshot}
+        alt={project.title}
+        effect="opacity"
+      />
+      <button className="open-modal-btn" onClick={() => openModal(project)}>
+        <FaEllipsis />
+      </button>
+    </div>
+  </SwiperSlide>
+))}
       </Swiper>
       </>
     );
