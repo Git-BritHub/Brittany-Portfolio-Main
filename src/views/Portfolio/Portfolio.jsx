@@ -8,7 +8,6 @@ import novelPursuit from '../../assets/images/novelPursuit.png';
 import scribeMaster from '../../assets/images/scribeMaster.png';
 import workDayScheduler from '../../assets/images/workDayScheduler.png';
 
-// TODO: Add github repo link to projects
 const projects = [
     {
         title: 'masterBuilder',
@@ -50,7 +49,6 @@ const projects = [
 
 function Portfolio () {
     return (
-        // TODO: add modal to project carousel with project info and links
         <div className='portfolioProjects mt-5 pt-3'>
             <h2 className="mt-5">PROJECTS</h2>
             <div className='projectCarousel pb-5'>
