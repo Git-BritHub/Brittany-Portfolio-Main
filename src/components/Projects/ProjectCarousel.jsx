@@ -61,8 +61,8 @@ const ProjectCarousel = ({ projects }) => {
           </div>
         </SwiperSlide>
         ))}
+        {selectedProject && <ProjectModal project={selectedProject} closeModal={() => setSelectedProject(null)} />}
       </Swiper>
-      {selectedProject && <ProjectModal project={selectedProject} closeModal={() => setSelectedProject(null)} />}
     </>
   );
 };

@@ -59,7 +59,7 @@
 .open-modal-btn {
   position: absolute;
   bottom: 95px;
-  right: 10px;
+  right: 12px;
   background-color: rgba(0, 0, 0, 0.5);
   border: 3px solid lightGray;
   border-radius: 50%;
@@ -78,9 +78,10 @@
   font-size: 26px;
   color: aqua;
   border-color: white;
+  filter: drop-shadow(0 0 20px #00fffc);
 }
 
-/* ProjectModal Styling */
+/* Carousel ProjectModal Styling */
 .modal-backdrop {
   position: fixed;
   top: 0;
@@ -94,15 +95,58 @@
   z-index: 1000;
 }
 .modal-content {
-  padding: 20px;
+  padding: 55px 5px 35px 5px;
   background: rgba(255, 255, 255, 0.2);
   backdrop-filter: blur(10px);
-  border-radius: 10px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  width: 90%;
-  max-width: 500px;
+  border-radius: 12px;
+  box-shadow: 0 0 20px 5px #00fffc;
+  height: 100%;
+  width: 100%;
+  max-height:245px;
+  max-width: 406px;
+  border: 3px solid lightGray;
 }
-.open-modal-btn {
-  /* Style your button here */
+.modal-content {
+  text-shadow: 0 0 20px #00fffc;
+}
+.modal-links a {
+  color: white;
+  font-size: 60px;
+  margin: 20px;
+  padding: 5px;
+  border: 3px solid white;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.modal-links a:hover {
+  color: aqua;
+  box-shadow: 0 0 20px 5px #00fffc;
+  border: 3px solid white;
+  border-radius: 50%;
+}
+.close-modal-btn {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  background-color: rgba(0, 0, 0, 0.5);
+  border: 3px solid lightGray;
+  border-radius: 50%;
   cursor: pointer;
+  color: lightGray;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  font-size: 22px;
+}
+.close-modal-btn:hover {
+  width: 42px;
+  height: 42px;
+  font-size: 24px;
+  color: aqua;
+  border-color: white;
+  filter: drop-shadow(0 0 20px #00fffc);
 }
