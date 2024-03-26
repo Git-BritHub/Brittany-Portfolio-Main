@@ -14,31 +14,37 @@ const projects = [
         title: 'masterBuilder',
         screenshot: masterBuilder,
         url: 'https://master-builder-production-40c9.up.railway.app/',
+        githubUrl: 'https://github.com/Git-BritHub/Master-Builder.git'
     },
     {
         title: 'theWeb',
         screenshot: theWeb,
         url: 'https://theweb-production.up.railway.app/',
+        githubUrl: 'https://github.com/tmorgan-dev/theWeb.git',
     },
     {
         title: 'Concert Groupie',
         screenshot: concertGroupie,
         url: 'https://shindekokoro.github.io/concert-groupie/',
+        githubUrl: 'https://github.com/shindekokoro/concert-groupie.git',
     },
     {
         title: 'Scribe Master 3000',
         screenshot: scribeMaster,
         url: 'https://scribe-master-3000-production.up.railway.app/',
+        githubUrl: 'https://github.com/Git-BritHub/Scribe-Master-3000.git',
     },
     {
         title: 'Work Day Scheduler',
         screenshot: workDayScheduler,
         url: 'https://git-brithub.github.io/Company-Work-Day-Scheduler/',
-    },
+        githubUrl: 'https://github.com/Git-BritHub/Company-Work-Day-Scheduler.git',
+        },
     {
         title: 'Novel Pursuit',
         screenshot: novelPursuit,
         url: 'https://novel-pursuit-production.up.railway.app/',
+        githubUrl: 'https://github.com/Git-BritHub/Novel-Pursuit.git',
     },
 ];
 
