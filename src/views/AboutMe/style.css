@@ -1,135 +1,149 @@
 .aboutMe {
-    padding: 1rem 4rem;
-    z-index: 3;
+  padding: 1rem 4rem;
+  z-index: 3;
 }
 .profilePic {
-    height: 300px;
-    width: 300px;
-    border-radius: 50%;
-    border: 3px solid white;
-    object-fit:cover;
-    object-position: 100% 30%;
-  }
+  height: 300px;
+  width: 300px;
+  border-radius: 50%;
+  border: 3px solid white;
+  object-fit:cover;
+  object-position: 100% 30%;
+}
 .aboutMe h1 {
   font-size: 32px;
   text-align: center;
 }
 .aboutMe h2 {
-    font-size: 28px;
-    margin: auto;
-}
-.aboutMe p {
-    font-size: 18px;
-    margin: 30px 50px;
+  font-size: 28px;
+  margin: auto;
 }
 
-@media (max-width: 565px) {
-    .profilePic {
-        margin-top: 10px;
-        height: 240px;
-        width: 240px; 
-    }
-    .aboutMe h1 {
-      padding: .5rem .5rem;
-      font-size: auto;
-      letter-spacing: auto;
-    }
-    .aboutMe p {
-        font-size: auto;
-        margin: 30px 15px;
-    }
-}
-@media (max-width: 362px) {
+@media(max-width: 991px) {
   .aboutMe h1 {
     padding: .5rem .5rem;
     font-size: auto;
     letter-spacing: auto;
   }
-    .aboutMe p {
-        font-size: auto;
-        margin: 20px 20px;
-    }
+  .aboutMe h2 {
+    font-size: 25px;
+  }
+}
+@media(max-width: 700px) {
+  .aboutMe h1 {
+    font-size: 28px;
+  }
+  .aboutMe h2 {
+    font-size: 24px;
+  }
+}
+@media (max-width: 565px) {
+  .profilePic {
+    margin-top: 10px;
+    height: 240px;
+    width: 240px; 
+  }
+  .aboutMe h1 {
+    font-size: 25px;
+  }
+  .aboutMe h2 {
+    font-size: 20px;
+  }
+}
+@media (max-width: 432px) {
+  .aboutMe h1 {
+    font-size: 23px;
+  }
+  .aboutMe h2 {
+    font-size: 19px;
+    padding: 0 10px;
+  }
+}
+@media (max-width: 380px) {
+  .aboutMe {
+    padding: .5rem;
+  }
+  .aboutMe h1 {
+    font-size: 23px;
+    padding: 5px 12px;
+  }
+  .aboutMe h2 {
+    font-size: 18px;
+    padding: 0 24px;
+  }
+}
+@media (max-width: 362px) {
+  .aboutMe h2 {
+    font-size: 17px;
+  }
 }
 @media (max-width: 345px) {
-    .aboutMe {
-        padding: .5rem;
-    }
-    .profilePic {
-        height: 230px;
-        width: 230px;
-      }
-    .aboutMe p {
-        font-size: auto;
-        margin: 15px 15px;
-    }
+  .profilePic {
+      height: 230px;
+      width: 230px;
+  }
+  .aboutMe h1 {
+    font-size: 22px;
+  }
+  .aboutMe h2 {
+    font-size: 16px;
+  }
 }
 @media (max-width: 302px) {
-    .aboutMe {
-        padding: .5rem;
-    }
-    .profilePic {
-        height: 225px;
-        width: 225px;
-      }
-    .aboutMe p {
-        font-size: auto;
-        margin: 15px 15px;
-    }
+  .profilePic {
+      height: 220px;
+      width: 220px;
+  }
 }
 
 /* Parallax */
 .parallaxBody {
-    margin: 0;
-    padding: 0;
-    height: 100vh;
-    color: #ffffff;
-    background: black;
-    font-family: "Euclid Circular A", "Poppins";
-  }
-  .parallaxTitle {
-    font-size: 5vw;
-    font-weight: 500;
-    text-align: center;
-    text-transform: uppercase;
-    letter-spacing: 24px;
-    text-shadow: 0 0 20px rgb(0 0 0 / 90%);
-  }
-  .parallaxTitle h1 {
-    font-size: 3vw;
-    margin-bottom: 1rem;
-  }
-  .parallaxTitle p {
-    text-align: center;
-    margin: 1rem 4rem;
-    font-size: 2vw;
-    letter-spacing: 12px;
-  }
-  .parallaxSection {
-    height: 100%;
-    width: 100%;
-    top: 0;
-    position: fixed;
-    visibility: hidden;
-  }
-  .parallaxOuter,
-  .parallaxInner {
-    width: 100%;
-    height: 100%;
-    overflow-y: hidden;
-  }
-  .parallaxBg {
-    display: grid;
-    place-items: center;
-    position: absolute;
-    height: 100%;
-    width: 100%;
-    top: 0;
-    background-size: cover;
-    background-position: center;
-  }
-  .parallaxSection .parallaxBg .parallaxTitle {
-    z-index: 1;
-  }
-  .parallaxSection .parallaxBg .clip-text {
-    overflow: hidden;
-  }
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  color: #ffffff;
+  background: black;
+  font-family: "Euclid Circular A", "Poppins";
+}
+.parallaxTitle {
+  text-align: center;
+  font-size: 5vw;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 24px;
+  text-shadow: 0 0 20px rgb(0 0 0 / 90%);
+}
+.parallaxTitle p {
+  /* margin: 1rem 4rem; */
+  font-size: 2vw;
+  letter-spacing: 20px;
+}
+.parallaxSection {
+  height: 100%;
+  width: 100%;
+  top: 0;
+  position: fixed;
+  visibility: hidden;
+}
+.parallaxOuter,
+.parallaxInner {
+  width: 100%;
+  height: 100%;
+  overflow-y: hidden;
+}
+.parallaxBg {
+  display: grid;
+  place-items: center;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  background-size: cover;
+  background-position: center;
+}
+.parallaxSection .parallaxBg .parallaxTitle {
+  z-index: 1;
+}
+.parallaxSection .parallaxBg .clip-text {
+  overflow: hidden;
+}
