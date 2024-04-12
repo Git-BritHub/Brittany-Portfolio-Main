@@ -1,16 +1,16 @@
 .aboutMe {
-  padding: 11rem 4rem 0 4rem;
+  padding: 12rem 4rem 0 4rem;
   z-index: 3;
 }
 .row {
-  margin-left: -300px;
-  margin-right: -320px;
+  margin-left: -330px;
+  margin-right: -360px;
   padding-left: 1rem;
   padding-right: 1rem;
 }
 .profilePic {
-  height: 390px;
-  width: 390px;
+  height: 410px;
+  width: 410px;
   border-radius: 50%;
   border: 3px solid white;
   object-fit:cover;
@@ -78,7 +78,69 @@
 .parallaxSection .parallaxBg .clip-text {
   overflow: hidden;
 }
+/* @media(max-width: 2560px) {
+  .aboutMe {
+    padding: 14rem 4rem 0 4rem;
+  }
+  .row {
+    margin-left: -300px;
+    margin-right: -320px;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+  .profilePic {
+    height: 400px;
+    width: 400px;
+  }
+  .aboutMe h1 {
+    font-size: 55px;
+    text-align: start;
+    margin-top: 12rem;
+    margin-bottom: .5rem;
+  }
+  .aboutMe h2 {
+    font-size: 30px;
+    text-align: start;
+  }
+} */
 
+@media(min-width: 1440px) {
+  .aboutMe {
+    padding: 13rem 4rem 0 4rem;
+  }
+  .row {
+    margin-left: -460px;
+    margin-right: -500px;
+  }
+  .profilePic {
+    height: 500px;
+    width: 500px;
+  }
+  .aboutMe h1 {
+    font-size: 46px;
+    margin-top: 13rem;
+    margin-bottom: 1rem;
+  }
+  .aboutMe h2 {
+    font-size: 23px;
+  }
+}
+
+@media(max-width: 1024px) {
+  .aboutMe {
+    padding: 11rem 4rem 0 4rem;
+  }
+  .row {
+    margin-left: -300px;
+    margin-right: -325px;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+  .profilePic {
+    height: 390px;
+    width: 390px;
+  }
+}
 @media(max-width: 991px) {
   .profilePic {
     height: 300px;
