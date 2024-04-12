@@ -101,19 +101,23 @@ function AboutMe() {
   
   return (
     <>
-      <div className='aboutMe justify-content-center align-items-center mt-5 pt-5'>
-          <LazyLoadImage
-              src={imagePath} 
-              alt='profile picture' 
-              className='profilePic justify-content-center align-items-center mt-5 mb-4'
-              effect="opacity"
-          />
-          <>
-          <h1 className="aboutMe mb-2">FULL STACK WEB DEVELOPER</h1>
-          <h2>
+      <div className='container aboutMe'>
+        <div className="row align-items-center">
+          <div className="col-lg-6 order-lg-2 text-center">
+            <LazyLoadImage
+                src={imagePath} 
+                alt='Brittany Brimley - Full Stack Web Developer' 
+                className='profilePic'
+                effect="opacity"
+            />
+          </div>
+          <div className="col-lg-6 order-lg-1">
+            <h1>FULL STACK WEB DEVELOPER</h1>
+            <h2>
             JavaScript | TypeScript | MERN Stack | HTML | CSS | NodeJS | JSON | JQuery | ExpressJS | Handlebars | JWT | MySQL | MongoDB | GraphQL | Apollo | React | NextJS | DaisyUI | Tailwind CSS | Bootstrap | Bulma | Figma | Netlify | SwiperJS | Google Cloud | GSAP
-          </h2>
-          </>
+            </h2>
+          </div>
+        </div>
       </div>
       {sections.map((section, index) => (
       <div key={index} className="parallaxBody">
