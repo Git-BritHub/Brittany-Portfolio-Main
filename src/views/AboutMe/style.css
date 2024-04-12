@@ -72,13 +72,23 @@
 }
 
 @media(max-width: 991px) {
+  .profilePic {
+    height: 300px;
+    width: 300px;
+    border-radius: 50%;
+    border: 3px solid white;
+    object-fit:cover;
+    object-position: 100% 30%;
+  }
   .aboutMe h1 {
     padding: .5rem .5rem;
     font-size: auto;
     letter-spacing: auto;
+    text-align: center;
   }
   .aboutMe h2 {
     font-size: 25px;
+    margin: auto;
   }
 }
 @media(max-width: 700px) {
