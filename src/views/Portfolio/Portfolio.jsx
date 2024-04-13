@@ -2,6 +2,7 @@ import './style.css'
 import Project from '../../components/Projects/Project';
 import ProjectCarousel from '../../components/Projects/ProjectCarousel';
 import masterBuilder from '../../assets/images/masterBuilderScreenshot.png';
+import juddTeam from '../../assets/images/juddTeam.png';
 import theWeb from '../../assets/images/theWeb.png';
 import concertGroupie from '../../assets/images/concertGroupie.png';
 import novelPursuit from '../../assets/images/novelPursuit.png';
@@ -13,7 +14,13 @@ const projects = [
         title: 'masterBuilder',
         screenshot: masterBuilder,
         url: 'https://master-builder-production-40c9.up.railway.app/',
-        githubUrl: 'https://github.com/Git-BritHub/Master-Builder.git'
+        githubUrl: 'https://github.com/Git-BritHub/Master-Builder.git',
+    },
+    {
+        title: 'The Judd Team',
+        screenshot: juddTeam,
+        url: 'https://mycahomesold.com/',
+        githubUrl: 'https://github.com/Git-BritHub',
     },
     {
         title: 'theWeb',
