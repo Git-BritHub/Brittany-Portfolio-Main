@@ -22,9 +22,31 @@
   margin-top: 10rem;
   margin-bottom: .5rem;
 }
+
+@keyframes anime {
+  0% {
+    background-position: -500%;
+  }
+  99% {
+    background-position: 500%;
+    -webkit-text-fill-color: transparent;
+  }
+  100% {
+    background-position: 500%;
+    -webkit-text-fill-color: lightGray;
+  }
+}
 .aboutMe h2 {
   font-size: 20px;
   text-align: start;
+  background: linear-gradient(90deg, #000, #fff, #000);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: rgba(255, 255, 255, 0);
+  overflow: hidden;
+  background-repeat: no-repeat;
+  background-size: 80%;
+  animation: anime 2s ease-in-out forwards;
+  animation-iteration-count: 1;
 }
 
 /* Parallax */
