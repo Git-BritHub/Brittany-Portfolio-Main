@@ -1,6 +1,4 @@
 import profilePic from '../../assets/images/profile_pic.png'
-import { LazyLoadImage } from 'react-lazy-load-image-component';
-import 'react-lazy-load-image-component/src/effects/opacity.css';
 import './style.css';
 
 import gsap from 'gsap';
@@ -14,7 +12,6 @@ import img4 from '../../assets/images/img4.jpg';
 import img5 from '../../assets/images/img5.jpg';
 
 function AboutMe() {
-  const imagePath = profilePic;
   const gsapInit = () => {
     gsap.registerPlugin(Observer);
   
@@ -104,12 +101,7 @@ function AboutMe() {
       <div className='container aboutMe'>
         <div className="row align-items-center">
           <div className="col-lg-6 order-lg-2 text-center">
-            <LazyLoadImage
-                src={imagePath} 
-                alt='Brittany Brimley - Full Stack Web Developer' 
-                className='profilePic'
-                effect="opacity"
-            />
+          <img src={profilePic} alt='Brittany Brimley - Full Stack Web Developer' className='profilePic' />
           </div>
           <div className="col-lg-6 order-lg-1">
             <h1>FULL STACK WEB DEVELOPER</h1>
