@@ -23,30 +23,57 @@
   margin-bottom: .5rem;
 }
 
-@keyframes anime {
-  0% {
-    background-position: -500%;
+@keyframes fadeInUp {
+  from {
+    transform: translateY(20%);
+    opacity: 0;
   }
-  99% {
-    background-position: 500%;
-    -webkit-text-fill-color: transparent;
-  }
-  100% {
-    background-position: 500%;
-    -webkit-text-fill-color: lightGray;
+  to {
+    transform: translateY(0);
+    opacity: 1;
   }
 }
+.fade-in-up {
+  animation: fadeInUp 1s ease-in-out forwards;
+}
+@keyframes slideInFromRight {
+  from {
+    transform: translateX(25%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+.fade-in-right {
+  animation: slideInFromRight 1s ease-in-out;
+}
+@keyframes slideInFromLeft {
+  from {
+    transform: translateX(-25%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+.fade-in-left {
+  animation: slideInFromLeft 1s ease-in-out forwards;
+}
+
+.aboutMe h1 {
+  font-size: 38px;
+  text-align: start;
+  margin-top: 10rem;
+  margin-bottom: .5rem;
+  color: lightGray;
+}
+
 .aboutMe h2 {
   font-size: 20px;
   text-align: start;
-  background: linear-gradient(90deg, #000, #fff, #000);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: rgba(255, 255, 255, 0);
-  overflow: hidden;
-  background-repeat: no-repeat;
-  background-size: 80%;
-  animation: anime 2s ease-in-out forwards;
-  animation-iteration-count: 1;
 }
 
 /* Parallax */
