@@ -62,7 +62,6 @@
 .fade-in-left {
   animation: slideInFromLeft 1s ease-in-out forwards;
 }
-
 .aboutMe h1 {
   font-size: 38px;
   text-align: start;
@@ -70,62 +69,9 @@
   margin-bottom: .5rem;
   color: lightGray;
 }
-
 .aboutMe h2 {
   font-size: 20px;
   text-align: start;
-}
-
-/* Parallax */
-.parallaxBody {
-  margin: 0;
-  padding: 0;
-  height: 100vh;
-  color: #ffffff;
-  background: black;
-  font-family: "Euclid Circular A", "Poppins";
-}
-.parallaxTitle {
-  text-align: center;
-  font-size: 5vw;
-  font-weight: 500;
-  text-transform: uppercase;
-  margin-left: .5rem;
-  letter-spacing: 24px;
-  text-shadow: 0 0 20px rgb(0 0 0 / 90%);
-}
-.parallaxTitle p {
-  font-size: 2vw;
-  letter-spacing: 20px;
-}
-.parallaxSection {
-  height: 100%;
-  width: 100%;
-  top: 0;
-  position: fixed;
-  visibility: hidden;
-}
-.parallaxOuter,
-.parallaxInner {
-  width: 100%;
-  height: 100%;
-  overflow-y: hidden;
-}
-.parallaxBg {
-  display: grid;
-  place-items: center;
-  position: absolute;
-  height: 100%;
-  width: 100%;
-  top: 0;
-  background-size: cover;
-  background-position: center;
-}
-.parallaxSection .parallaxBg .parallaxTitle {
-  z-index: 1;
-}
-.parallaxSection .parallaxBg .clip-text {
-  overflow: hidden;
 }
 
 /* Screen sizes 1440px width and above */
@@ -218,7 +164,6 @@
   .aboutMe .col-lg-6 {
     margin-bottom: 1rem;
   }
-
 }
 @media(max-width: 700px) {
   .aboutMe {
@@ -241,14 +186,6 @@
   .aboutMe h1 {
     font-size: 25px;
   }
-  .parallaxTitle {
-    font-size: 4vw;
-    letter-spacing: 18px;
-  }
-  .parallaxTitle p {
-    font-size: 2vw;
-    letter-spacing: 12px;
-  }
 }
 @media (max-width: 432px) {
   .aboutMe h1 {
@@ -259,14 +196,6 @@
     font-size: 16px;
     padding: 0 10px;
   }
-  .parallaxTitle {
-    font-size: 3vw;
-    letter-spacing: 16px;
-  }
-  .parallaxTitle p {
-    font-size: 3vw;
-    letter-spacing: 10px;
-  }
 }
 @media (max-width: 380px) {
   .aboutMe {
@@ -275,15 +204,6 @@
   .aboutMe h1 {
     font-size: 23px;
     padding: 3px 12px;
-  }
-}
-@media (max-width: 362px) {
-  .parallaxTitle {
-    letter-spacing: 12px;
-  }
-  .parallaxTitle p {
-    font-size: 3vw;
-    letter-spacing: 6px;
   }
 }
 @media (max-width: 345px) {
