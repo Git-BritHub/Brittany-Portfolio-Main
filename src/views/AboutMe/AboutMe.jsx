@@ -21,7 +21,7 @@ function AboutMe() {
           </div>
         </div>
       </div>
-      <Suspense fallback={<div>Loading...</div>}>
+      <Suspense>
         <Parallax />
       </Suspense>
     </>
