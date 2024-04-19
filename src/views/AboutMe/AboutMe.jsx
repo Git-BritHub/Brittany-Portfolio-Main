@@ -1,6 +1,9 @@
+import React, { Suspense, lazy } from 'react';
 import profilePic from '../../assets/images/profile_pic.png'
-import Parallax from '../../components/Parallax/Parallax';
+// import Parallax from '../../components/Parallax/Parallax';
 import './style.css';
+
+const Parallax = lazy(() => import('../../components/Parallax/Parallax'));
 
 function AboutMe() {
   return (
@@ -18,7 +21,9 @@ function AboutMe() {
           </div>
         </div>
       </div>
-      <Parallax />
+      <Suspense fallback={<div>Loading...</div>}>
+        <Parallax />
+      </Suspense>
     </>
   )
 }
