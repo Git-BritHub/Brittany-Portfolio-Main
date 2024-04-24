@@ -1,6 +1,6 @@
 import React, { Suspense, lazy } from 'react';
+import { Helmet } from 'react-helmet';
 import profilePic from '../../assets/images/profile_pic.jpg'
-// import Parallax from '../../components/Parallax/Parallax';
 import './style.css';
 
 const Parallax = lazy(() => import('../../components/Parallax/Parallax'));
@@ -8,6 +8,10 @@ const Parallax = lazy(() => import('../../components/Parallax/Parallax'));
 function AboutMe() {
   return (
     <>
+      <Helmet>
+        <title>Brittany Brimley - Full Stack Web Developer</title>
+        <meta name="description" content="Discover Brittany Brimley's projects and skills as a Full Stack Web Developer. Explore my work with JavaScript, React, NextJS, NodeJS, MERN Stack and more." />
+      </Helmet>
       <div className='container aboutMe'>
         <div className="row align-items-center">
           <div className="col-lg-6 order-lg-2 text-center">
