@@ -5,9 +5,10 @@ footer {
 }
 
 .btn {
-    color: #fff;
+    color: aqua;
     font-weight: 700;
     border-radius: 0;
+    border: 2px solid #fff;
     overflow: hidden;
     position: relative;
 }
@@ -25,7 +26,9 @@ footer {
 }
 
 .btn:hover {
-    background: transparent;
+    color: #00fffc;
+    border: 2px solid #00fffc;
+    background: purple;
     box-shadow: 0 0 20px 5px #00fffc;
 }
 
