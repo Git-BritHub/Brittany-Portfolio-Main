@@ -1,6 +1,7 @@
 import ProjectModal from "./ProjectModal";
 import React, { useState } from "react";
 import { FaEllipsis } from "react-icons/fa6";
+import { LazyLoadImage } from 'react-lazy-load-image-component';
 import 'react-lazy-load-image-component/src/effects/opacity.css';
 import './style.css';
 
@@ -49,7 +50,7 @@ const ProjectCarousel = ({ projects }) => {
         {projects.map((project, index) => (
         <SwiperSlide key={index} style={{width:'400px', height:'400px'}}>
           <div className="slide-content-wrapper">
-            <img
+            <LazyLoadImage
               src={project.screenshot}
               alt={project.title}
               effect="opacity"
