@@ -1,5 +1,5 @@
 import React, { Suspense, lazy } from 'react';
-import profilePic from '../../assets/images/profile_pic.png'
+import profilePic from '../../assets/images/profile_pic.jpg'
 // import Parallax from '../../components/Parallax/Parallax';
 import './style.css';
 
