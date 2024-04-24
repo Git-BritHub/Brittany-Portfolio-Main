@@ -63,7 +63,7 @@ function Portfolio () {
                 <link rel="canonical" href="https://brittany-brimley-portfolio.netlify.app/Portfolio" />
                 <meta name="description" content="Explore Brittany Brimley's Full Stack Web Development projects including real-world applications. View live sites and source codes." />
             </Helmet>
-            <h2 className="mt-5">PROJECTS</h2>
+            <h1 className="mt-5">PROJECTS</h1>
             <div className='projectCarousel pb-5'>
             <ProjectCarousel projects={projects} />
             </div>
