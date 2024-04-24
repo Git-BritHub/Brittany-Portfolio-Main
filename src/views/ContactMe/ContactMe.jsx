@@ -1,3 +1,4 @@
+import { Helmet } from 'react-helmet';
 import { Form, Button, Alert } from 'react-bootstrap';
 import { useRef, useState } from 'react';
 import emailjs from '@emailjs/browser';
@@ -108,6 +109,11 @@ function Contact() {
 
     return (
         <div className='contactHeader justify-content-center align-items-center mt-5 pt-3'>
+            <Helmet>
+                <title>Contact Brittany Brimley for Web Development Projects</title>
+                <link rel="canonical" href="https://brittany-brimley-portfolio.netlify.app/ContactMe" />
+                <meta name="description" content="Get in touch with Brittany Brimley to discuss web development projects or inquire about her services. Fill out the contact form for a prompt response." />
+            </Helmet>
             <h1 className="mt-5">CONTACT ME</h1>
             <Form ref={form} onSubmit={sendEmail} className='container border rounded-2 my-4'>
 
