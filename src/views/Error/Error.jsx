@@ -1,4 +1,5 @@
 import { useRouteError } from 'react-router-dom';
+import { Helmet } from 'react-helmet';
 
 export default function Error() {
     const error = useRouteError();
@@ -6,7 +7,11 @@ export default function Error() {
 
     return (
         <div id="error">
-            {/* TODO: add funny image */}
+            <Helmet>
+                <title>Error - Brittany Brimley Portfolio</title>
+                <meta name="robots" content="noindex" />
+            </Helmet>
+            {/* TODO: add funny image and link to return to homepage */}
             <h1 className="py-5 mt-5">Ruh Roh...</h1>
             <p>An unexpected error has occurred.</p>
             <p>
