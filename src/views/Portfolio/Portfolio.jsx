@@ -1,3 +1,4 @@
+import { Helmet } from 'react-helmet';
 import './style.css'
 import Project from '../../components/Projects/Project';
 import ProjectCarousel from '../../components/Projects/ProjectCarousel';
@@ -57,6 +58,11 @@ const projects = [
 function Portfolio () {
     return (
         <div className='portfolioProjects mt-5 pt-3'>
+            <Helmet>
+                <title>Brittany Brimley's Projects - Full Stack Web Development Portfolio</title>
+                <link rel="canonical" href="https://brittany-brimley-portfolio.netlify.app/Portfolio" />
+                <meta name="description" content="Explore Brittany Brimley's Full Stack Web Development projects including real-world applications. View live sites and source codes." />
+            </Helmet>
             <h2 className="mt-5">PROJECTS</h2>
             <div className='projectCarousel pb-5'>
             <ProjectCarousel projects={projects} />
