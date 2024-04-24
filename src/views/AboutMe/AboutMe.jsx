@@ -10,6 +10,7 @@ function AboutMe() {
     <>
       <Helmet>
         <title>Brittany Brimley - Full Stack Web Developer</title>
+        <link rel="canonical" href="https://brittany-brimley-portfolio.netlify.app/" />
         <meta name="description" content="Discover Brittany Brimley's projects and skills as a Full Stack Web Developer. Explore my work with JavaScript, React, NextJS, NodeJS, MERN Stack and more." />
       </Helmet>
       <div className='container aboutMe'>
