@@ -4,7 +4,6 @@ React Vite Build</br>
 
 ## Table of Contents
 * [Description](#description)
-* [Usage](#usage)
 * [License](#license)
 * [Contributing](#contributing)
 * [Questions](#questions)
@@ -15,10 +14,6 @@ React Vite Build</br>
 Welcome to my personal portfolio website, a dynamic and interactive platform designed to exhibit my expertise as a Full Stack Web Developer. This site, meticulously crafted using React, serves as a window into my professional journey, showcasing a diverse range of web applications and projects that I have developed both collaboratively and independently.
 </br>
 Discover more about my skills, access or download my resume, and view my contact details. Prefer a quick chat? Drop me a message through my user-friendly Contact Form. Explore, connect, and let's talk tech!
-
-## Usage
-* View my deployed Netlify URL at https://brittany-brimley-portfolio.netlify.app/
-<img width="1512" alt="reactPortfolio_about" src="https://github.com/Git-BritHub/Brittany-Portfolio-Main/assets/130286884/5ce98d8b-bf5d-4f27-ac3f-be5893c33e90">
 
 ## License
 [![License: MIT](https://img.shields.io/badge/License-MIT-aqua.svg)](https://opensource.org/licenses/MIT)
