@@ -26,6 +26,7 @@ Discover more about my skills, access or download my resume, and view my contact
 * https://react-bootstrap.netlify.app/docs/getting-started/introduction
 * https://regexr.com/
 * https://www.jbinternational.co.uk/article/view/3584#:~:text=The%20easiest%20way%20to%20validate,the%20format%20on%20supported%20browsers.&text=This%20will%20cause%20the%20browser,a%20validly%20formatted%20email%20address
+* About Me parallax feature: https://gsap.com/
 * Project Carousel: https://swiperjs.com/
 
 ## Questions
