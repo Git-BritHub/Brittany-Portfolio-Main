@@ -26,14 +26,14 @@ Discover more about my skills, access or download my resume, and view my contact
 * https://react-bootstrap.netlify.app/docs/getting-started/introduction
 * https://regexr.com/
 * https://www.jbinternational.co.uk/article/view/3584#:~:text=The%20easiest%20way%20to%20validate,the%20format%20on%20supported%20browsers.&text=This%20will%20cause%20the%20browser,a%20validly%20formatted%20email%20address
+* Project Carousel: https://swiperjs.com/
 * About Me parallax feature: https://gsap.com/
 * Parallax image references:
-- img1: Photo by Eberhard Grossgasteiger https://www.pexels.com/photo/low-angle-shot-of-rock-formation-1366909/
-- img2: Photo by Markus Spiske https://www.pexels.com/photo/sea-landscape-nature-water-172067/
-- img3: Photo by Eberhard Grossgasteiger https://www.pexels.com/photo/photo-of-forest-covered-by-fog-1366921/
-- img4: Photo by Matteo Badini https://www.pexels.com/photo/green-mountain-with-river-in-the-middle-4064432/
-- img5: Generated with prompts to chat GPT
-* Project Carousel: https://swiperjs.com/
+    - img1: Photo by Eberhard Grossgasteiger https://www.pexels.com/photo/low-angle-shot-of-rock-formation-1366909/
+    - img2: Photo by Markus Spiske https://www.pexels.com/photo/sea-landscape-nature-water-172067/
+    - img3: Photo by Eberhard Grossgasteiger https://www.pexels.com/photo/photo-of-forest-covered-by-fog-1366921/
+    - img4: Photo by Matteo Badini https://www.pexels.com/photo/green-mountain-with-river-in-the-middle-4064432/
+    - img5: Generated with prompts to chat GPT
 
 ## Questions
 If you find any bugs or have any questions, feel free to reach out via my portfolio Contact Form or GitHub at https://github.com/Git-BritHub.
