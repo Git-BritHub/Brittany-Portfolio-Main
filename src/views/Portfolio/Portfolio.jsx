@@ -18,12 +18,6 @@ const projects = [
         githubUrl: 'https://github.com/Git-BritHub/Master-Builder.git',
     },
     {
-        title: 'The Judd Team',
-        screenshot: juddTeam,
-        url: 'https://mycahomesold.com/',
-        githubUrl: 'https://github.com/Git-BritHub',
-    },
-    {
         title: 'theWeb',
         screenshot: theWeb,
         url: 'https://theweb-production.up.railway.app/',
