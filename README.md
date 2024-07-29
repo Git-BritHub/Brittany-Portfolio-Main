@@ -11,7 +11,7 @@ React Vite Build</br>
 
 
 ## Description
-Welcome to my personal portfolio website, a dynamic and interactive platform designed to exhibit my expertise as a Full Stack Web Developer. This site, meticulously crafted using React, serves as a window into my professional journey, showcasing a diverse range of web applications and projects that I have developed both collaboratively and independently.
+Welcome to my personal portfolio website, a dynamic and interactive platform designed to exhibit my expertise as a Full Stack Web Developer. Crafted using React, this site serves as a window into my professional journey. Showcasing a diverse range of web applications and projects that I have developed both collaboratively and independently.
 </br>
 Discover more about my skills, access or download my resume, and view my contact details. Prefer a quick chat? Drop me a message through my user-friendly Contact Form. Explore, connect, and let's talk tech!
 
