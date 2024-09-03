@@ -8,9 +8,10 @@ import './style.css';
 // Import Swiper styles
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
+import 'swiper/css/navigation';
 import 'swiper/css/effect-coverflow';
 import 'swiper/css/free-mode';
-import { EffectCoverflow, FreeMode, Mousewheel } from 'swiper/modules';
+import { EffectCoverflow, FreeMode, Mousewheel, Navigation } from 'swiper/modules';
 
 const ProjectCarousel = ({ projects }) => {
   const [selectedProject, setSelectedProject] = useState(null);
@@ -20,6 +21,7 @@ const ProjectCarousel = ({ projects }) => {
   return (
     <>
       <Swiper
+        navigation={true}
         effect={'coverflow'}
         centeredSlides={true}
         direction={'horizontal'}
@@ -44,7 +46,7 @@ const ProjectCarousel = ({ projects }) => {
         }}
         initialSlide={1}
         loop={true}
-        modules={[EffectCoverflow, FreeMode, Mousewheel]}
+        modules={[EffectCoverflow, FreeMode, Mousewheel, Navigation]}
         className="mySwiper"
         >
         {projects.map((project, index) => (
